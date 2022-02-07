@@ -356,7 +356,7 @@
               </div>
             </div>
 
-            <div class='team-modal-content team-boazdaniel'>
+            <div class='team-modal-content team-johnpatzelt'>
               <div class='team-modal-icontents'>
                 <div class='team-modal-iname'>
                   <span>John Patzelt</span>
@@ -369,7 +369,7 @@
               </div>
             </div>
 
-            <div class='team-modal-content team-johnpatzelt'>
+            <div class='team-modal-content team-boazdaniel'>
               <div class='team-modal-icontents'>
                 <div class='team-modal-iname'>
                   <span>Boaz Daniel</span>
@@ -381,6 +381,36 @@
                 </div>
               </div>
             </div>
+
+            <div class='team-modal-content team-chuckrichards'>
+              <div class='team-modal-icontents'>
+                <div class='team-modal-iname'>
+                  <span>Chuck Richards</span>
+                  <div class='team-modal-iname-underline'></div>
+                </div>
+                <div class='team-modal-ititle'><span>Product Manager/Category Analyst</span></div>
+                <div class='team-blurb'>
+                  <p class='team-blurb-contents'>After graduating from Middle Tennessee State University in 2002, Chuck began his professional career working for an ad agency where he was responsible for managing all of their print and digital campaigns. He then transitioned into  the world of consumer goods where he was the product and marketing manager for a major oral care company.</p>
+                  <p class='team-blurb-contents'>Chuck joined Cambridge in 2013 as a product manager. With a keen eye, attention to detail, and a wild  imagination, Chuck has helped the Cambridge brand transition itself from a traditional industrial product line to a first class retail branded product line.</p>
+                  <p class='team-blurb-contents'>Chuck’s favorite thing to do is spend time with his two sons Canon and Kellan. He also enjoys playing sports especially basketball and football. When he’s too sore from playing he enjoys watching his favorite teams, The Tennessee Vols and Pittsburgh Steelers dominate the gridiron.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class='team-modal-content team-miriamrosner'>
+              <div class='team-modal-icontents'>
+                <div class='team-modal-iname'>
+                  <span>Miriam Rosner</span>
+                  <div class='team-modal-iname-underline'></div>
+                </div>
+                <div class='team-modal-ititle'><span>Creative Director</span></div>
+                <div class='team-blurb'>
+                  <p class='team-blurb-contents'>Miriam graduated from Thomas Edison College with a degree in computer programming, and a longstanding passion for graphics and web design (in fact, she created her first  website at 14 years of age).</p>
+                  <p class='team-blurb-contents'>In 2002, Miriam went to work for a toy novelty company where she ran their print and online catalogs. She joined the Coda team in 2012 and was quickly promoted to Director of Marketing as a result of her talent, dedication, and relentless pursuit of perfection.</p>
+                </div>
+              </div>
+            </div>
+
 
         </div> <!-- end team-modal-container -->
       </div> <!-- end team-modal -->
@@ -400,22 +430,70 @@
       <img src="images/usmap2.svg"/>
     </div>
     <div class='team-salesmanager-container'>
-      <?php
-        global $wpdb;
-        $salesmanager = $wpdb->get_results("SELECT * FROM wp_camsalesmanager WHERE active='y' ORDER BY sort ASC;");
-        foreach ($salesmanager as $salesmanager1){
-          echo "<div class='team-salesmanager-each'>";
-            echo "<div class='team-salesmanager-img'>";
-              echo "<img class='team-state-".$salesmanager1->si."' src='".$salesmanager1->img."'>";
-            echo "</div>";
-            echo "<div class='team-salesmanager-name'><span>".ucfirst($salesmanager1->first)." ".ucfirst($salesmanager1->last)."</span></div>";
-            echo "<div class='team-salesmanager-title'><span>".ucfirst($salesmanager1->title)."</span></div>";
-            echo "<div class='team-salesmanager-email'><a href='mailto:".$salesmanager1->email."'>".$salesmanager1->email."</a></div>";
-            echo "<div class='team-salesmanager-phone'><span>".$salesmanager1->phone."</span></div>";
-            echo "<div class='team-salesmanager-text'><span>".strtoupper($salesmanager1->text)."</span></div>";
-          echo "</div>";
-        }
-      ?>
+
+      <div class='team-salesmanager-each'>
+        <div class='team-salesmanager-img'>
+          <img class='team-state-FL' src='https://storage.codacambridge.com/files/personnel/karenarnold.png'>
+        </div>
+        <div class='team-salesmanager-name'>
+          <span>Karen Arnold</span>
+        </div>
+        <div class='team-salesmanager-title'>
+          <span>Sales Manager</span>
+        </div>
+        <div class='team-salesmanager-email'>
+          <a href='mailto:karnold@codaresources.com'>karnold@codaresources.com</a>
+        </div>
+        <div class='team-salesmanager-phone'>
+          <span>773.265.3165</span>
+        </div>
+        <div class='team-salesmanager-text'>
+          <span>FLORIDA HOME BASE</span>
+        </div>
+      </div>
+
+      <div class='team-salesmanager-each'>
+        <div class='team-salesmanager-img'>
+          <img class='team-state-CA' src='https://storage.codacambridge.com/files/personnel/scottkline.png'>
+        </div>
+        <div class='team-salesmanager-name'>
+          <span>Scott Kline</span>
+        </div>
+        <div class='team-salesmanager-title'>
+          <span>Sales Manager</span>
+        </div>
+        <div class='team-salesmanager-email'>
+          <a href='mailto:skline@codaresources.com'>skline@codaresources.com</a>
+        </div>
+        <div class='team-salesmanager-phone'>
+          <span>773.265.3149</span>
+        </div>
+        <div class='team-salesmanager-text'>
+          <span>CALIFORNIA HOME BASE</span>
+        </div>
+      </div>
+
+      <div class='team-salesmanager-each'>
+        <div class='team-salesmanager-img'>
+          <img class='team-state-IL' src='https://storage.codacambridge.com/files/personnel/kylekotrba.png'>
+        </div>
+        <div class='team-salesmanager-name'>
+          <span>Kyle Kotrba</span>
+        </div>
+        <div class='team-salesmanager-title'>
+          <span>Sales Manager</span>
+        </div>
+        <div class='team-salesmanager-email'>
+          <a href='mailto:kkotrba@codaresources.com'>kkotrba@codaresources.com</a>
+        </div>
+        <div class='team-salesmanager-phone'>
+          <span>773.265.3068</span>
+        </div>
+        <div class='team-salesmanager-text'>
+          <span>ILLINOIS HOME BASE</span>
+        </div>
+      </div>
+
     </div>
   </div>  <!--  end container  -->
 </div>  <!--  end team-salesmanager class -->
