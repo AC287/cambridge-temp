@@ -3482,3 +3482,9 @@ a.search-catlink {
     font-size: 10pt;
   }
 }
+.product-temp-notes {
+  text-align: center;
+}
+.product-temp-notes h2 {
+  color: #003DA5;
+}
